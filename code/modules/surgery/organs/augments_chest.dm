@@ -207,3 +207,18 @@
 
 	toggle(silent = TRUE)
 	return 0
+
+/obj/item/organ/cyberimp/chest/backarm
+	name = "integratable extra arm"
+	desc = "An arm that can be grafted into backs, allowing for an extra appendage."
+	slot = ORGAN_SLOT_THRUSTERS
+	icon_state = "imp_jetpack"
+	implant_overlay = null
+	implant_color = null
+	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/organ/cyberimp/chest/Insert(mob/living/carbon/M)
+	. = ..()
+
+/obj/item/organ/cyberimp/chest/Remove(mob/living/carbon/M)
+	. = ..()
