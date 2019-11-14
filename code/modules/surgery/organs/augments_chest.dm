@@ -219,6 +219,8 @@
 
 /obj/item/organ/cyberimp/chest/Insert(mob/living/carbon/M)
 	. = ..()
+	M.change_number_of_hands(M.held_items.len + 1)
 
 /obj/item/organ/cyberimp/chest/Remove(mob/living/carbon/M)
 	. = ..()
+	M.change_number_of_hands(M.held_items.len - 1)
